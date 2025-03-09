@@ -46,3 +46,9 @@ const stopTime = () => {
 }
 
 // ============ reset time =========//
+const resetTime=()=>{
+    clearInterval(timer);
+    [seconds, minutes, hours] = [0, 0, 0];
+    setTime.innerText='00:00:00'
+
+}
